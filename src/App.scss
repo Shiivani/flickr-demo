@@ -1,0 +1,220 @@
+@import "~bootstrap/scss/bootstrap";
+// color variables
+
+$white: #fff;
+$black: #000;
+$alice-blue: #f3f5f6;
+$primary-grey: #8c9296;
+$secondary-grey: #afb7bc;
+
+// code
+body {
+  background: $alice-blue !important;
+}
+.app-container {
+  margin: 0 auto;
+  max-width: 1300px;
+  float: none;
+  width: 100%;
+  .group-container {
+    margin: 0 20px;
+    .group-name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .search-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      .input-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20px;
+        .group-input {
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+        ul {
+          position: absolute;
+          list-style: none;
+          top: 35px;
+          background: var(--white);
+          border-radius: 0 0 5px 5px;
+          width: 100%;
+          text-align: left;
+          padding: 0 2px;
+          z-index: 5;
+          box-shadow: 0 0 20px rgba(0,0,0,.08);
+          li {
+            padding: 5px 0 5px 12px;
+            cursor: pointer;
+            &:last-child {
+              margin-bottom: 2px;
+            }
+            &:hover {
+              background: $alice-blue;
+            }
+          }
+        }
+      }
+    }
+    .card-columns {
+      margin-top: 10px;
+      .card {
+        background: $white;
+        padding: 10px;
+        position: relative;
+        .card-image-group {
+          object-fit: cover;
+          width: auto;
+          height: 60px;
+          border-radius: 100%;
+          box-shadow: inset 0 0 20px rgba(0,0,0,.08);
+          position: relative;
+          background-color: #ddd;
+          transition: box-shadow .15s ease-in-out;
+          vertical-align: top;
+          display: inline-block;
+        }
+        .card-body {
+          display: inline-block;
+          padding: .25rem 1.25rem;
+          .card-title {
+            font-size: 15px;
+            color: $black;
+            font-weight: 500;
+            margin-bottom: 5px;
+            overflow: hidden;
+            max-width: 200px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          .card-text {
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+.masonry-with-columns-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; 
+  margin: 40px 20px;
+}
+  .masonry-with-columns-2 > div {
+    height: 150px;
+    line-height: 150px;
+    background: $white;
+    color: white;
+    margin: 0 1rem 1rem 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto; 
+    display: flex;
+    flex-direction: column;
+    img {
+      vertical-align: top;
+      object-fit: contain;
+    }
+    div {
+      line-height: 1;
+      padding-top: 10px;
+      p {
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: $black;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .masonry-with-columns-2 > div:nth-child(1) {
+    width: 222px;
+  }
+  .masonry-with-columns-2 > div:nth-child(2) {
+    width: 102px; }
+  .masonry-with-columns-2 > div:nth-child(3) {
+    width: 155px; }
+  .masonry-with-columns-2 > div:nth-child(4) {
+    width: 365px; }
+  .masonry-with-columns-2 > div:nth-child(5) {
+    width: 132px; }
+  .masonry-with-columns-2 > div:nth-child(6) {
+    width: 106px; }
+  .masonry-with-columns-2 > div:nth-child(7) {
+    width: 199px; }
+  .masonry-with-columns-2 > div:nth-child(8) {
+    width: 164px; }
+  .masonry-with-columns-2 > div:nth-child(9) {
+    width: 424px; }
+  .masonry-with-columns-2 > div:nth-child(10) {
+    width: 467px; }
+  .masonry-with-columns-2 > div:nth-child(11) {
+    width: 350px; }
+  .masonry-with-columns-2 > div:nth-child(12) {
+    width: 168px; }
+  .masonry-with-columns-2 > div:nth-child(13) {
+    width: 296px; }
+  .masonry-with-columns-2 > div:nth-child(14) {
+    width: 440px; }
+  .masonry-with-columns-2 > div:nth-child(15) {
+    width: 110px; }
+  .masonry-with-columns-2 > div:nth-child(16) {
+    width: 413px; }
+  .masonry-with-columns-2 > div:nth-child(17) {
+    width: 333px; }
+  .masonry-with-columns-2 > div:nth-child(18) {
+    width: 441px; }
+  .masonry-with-columns-2 > div:nth-child(19) {
+    width: 74px; }
+  .masonry-with-columns-2 > div:nth-child(20) {
+    width: 122px; }
+  .masonry-with-columns-2 div:nth-child(21) {
+    width: 189px; }
+  .masonry-with-columns-2 div:nth-child(22) {
+    width: 91px; }
+  .masonry-with-columns-2 div:nth-child(23) {
+    width: 269px; }
+  .masonry-with-columns-2 div:nth-child(24) {
+    width: 394px; }
+  .masonry-with-columns-2 div:nth-child(25) {
+    width: 139px; }
+  .masonry-with-columns-2 div:nth-child(26) {
+    width: 240px; }
+  .masonry-with-columns-2 div:nth-child(27) {
+    width: 184px; }
+  .masonry-with-columns-2 div:nth-child(28) {
+    width: 261px; }
+  .masonry-with-columns-2 div:nth-child(29) {
+    width: 358px; }
+  .masonry-with-columns-2 div:nth-child(30) {
+    width: 393px; }
+  .masonry-with-columns-2 div:nth-child(31) {
+    width: 370px; }
+  .masonry-with-columns-2 div:nth-child(32) {
+    width: 399px; }
+  .masonry-with-columns-2 div:nth-child(33) {
+    width: 263px; }
+  .masonry-with-columns-2 div:nth-child(34) {
+    width: 135px; }
+  .masonry-with-columns-2 div:nth-child(35) {
+    width: 221px; }
+  .masonry-with-columns-2 div:nth-child(36) {
+    width: 233px; }
